@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: 0;
+}
+
+body {
+  background: rebeccapurple;
+}
+
+body header {
+  color: #fff;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+body header .left a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body header .left a span {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+body header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body header .right p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+body header .right nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .right nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: 4px 12px;
+  background: #a7a7a7;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+body header .right nav a:not(:last-child) {
+  margin-right: 8px;
+}
+
+body main#home {
+  margin: 32px 64px;
+  padding: 16px 20px;
+}
+
+body main#home .component {
+  margin-bottom: 24px;
+}
+
+body main#home .component h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+body main#home .component .podcasts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main#home .component .podcasts .podcast {
+  border: 1px solid #ddd;
+  padding: 4px;
+  background: #fff;
+  position: relative;
+}
+
+body main#home .component .podcasts .podcast:not(:last-child) {
+  margin-right: 16px;
+}
+
+body main#home .component .podcasts .podcast .podcast-img {
+  width: 160px;
+  height: 180px;
+  background-image: url(https://cdn.dribbble.com/users/5829351/screenshots/13963621/i_will_do_professional_podcast_cover_art_design_2_4x.jpg);
+  background-size: cover;
+  margin-bottom: 4px;
+}
+
+body main#home .component .podcasts .podcast span {
+  font-style: italic;
+  opacity: .7;
+}
+
+body main#home .component .podcasts .podcast a.listening-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+body main#login, body main#register, body main#forgot-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+body main#login .component, body main#register .component, body main#forgot-password .component {
+  width: 300px;
+  padding: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 10px;
+}
+
+body main#login .component h3, body main#register .component h3, body main#forgot-password .component h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+body main#login .component form, body main#register .component form, body main#forgot-password .component form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main#login .component form input, body main#register .component form input, body main#forgot-password .component form input {
+  padding: 8px;
+  border: 1px solid #000;
+  margin-bottom: 8px;
+}
+
+body main#login .component form a.forgot-link, body main#register .component form a.forgot-link, body main#forgot-password .component form a.forgot-link {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+body main#login .component form .buttons, body main#register .component form .buttons, body main#forgot-password .component form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main#login .component form .buttons .btn, body main#register .component form .buttons .btn, body main#forgot-password .component form .buttons .btn {
+  width: 120px;
+  height: 30px;
+  margin: 0 16px;
+  text-decoration: none;
+  background: #a7a7a7;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+body main#upload {
+  color: #fff;
+  margin: 32px;
+}
+
+body main#upload .component {
+  margin-bottom: 24px;
+}
+
+body main#upload .component h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+body main#upload .component form {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body main#upload .component form .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main#upload .component form .left label span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+body main#upload .component form .left label input {
+  margin-bottom: 16px;
+  border: 1px solid #000;
+  padding: 4px 8px;
+  width: 300px;
+}
+
+body main#upload .component form .left label textarea {
+  resize: none;
+  border: 1px solid #000;
+  padding: 4px 8px;
+  width: 300px;
+}
+
+body main#upload .component form .right button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #a7a7a7;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body main#profile {
+  margin: 32px 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main#profile .component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  width: 100vw;
+}
+
+body main#profile .component .profile {
+  width: 300px;
+}
+
+body main#profile .component .profile h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+body main#profile .component .profile img.avatar {
+  width: 300px;
+  border: 1px solid #000;
+  margin-bottom: 8px;
+}
+
+body main#profile .component .profile h4 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+body main#profile .component .profile p.bio {
+  text-align: center;
+  font-size: 14px;
+  margin: 8px;
+}
+
+body main#profile .component .profile a {
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 4px 12px;
+  background: #a7a7a7;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+body main#profile .component .all-contents h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+body main#profile .component .all-contents .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+body main#profile .component .all-contents .contents .content {
+  border: 1px solid #ddd;
+  padding: 4px;
+  cursor: pointer;
+  background: #fff;
+}
+
+body main#profile .component .all-contents .contents .content:not(:last-child) {
+  margin-right: 16px;
+}
+
+body main#profile .component .all-contents .contents .content .content-img {
+  width: 160px;
+  height: 180px;
+  background-image: url(https://cdn.dribbble.com/users/5829351/screenshots/13963621/i_will_do_professional_podcast_cover_art_design_2_4x.jpg);
+  background-size: cover;
+  margin-bottom: 4px;
+}
+
+body main#profile .component .all-contents .contents .content h4 {
+  color: #000;
+}
+
+body main#profile .component .all-contents a {
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 4px 12px;
+  background: #a7a7a7;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+body main#edit-profile {
+  height: calc(100vh-132px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin-left: 60px;
+}
+
+body main#edit-profile .component h1 {
+  margin-bottom: 16px;
+}
+
+body main#edit-profile .component .flex-box {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main#edit-profile .component .flex-box .profile {
+  width: 200px;
+}
+
+body main#edit-profile .component .flex-box .profile img {
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+body main#edit-profile .component .flex-box .profile h3 {
+  text-align: center;
+}
+
+body main#edit-profile .component .flex-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main#edit-profile .component .flex-box form label h5 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+body main#edit-profile .component .flex-box form label input,
+body main#edit-profile .component .flex-box form label textarea {
+  border: 1px solid #000;
+  width: 200px;
+  height: 32px;
+  padding-left: 4px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+body main#edit-profile .component .flex-box form label textarea {
+  resize: none;
+  height: 100px;
+}
+
+body main#edit-profile .component .flex-box form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #a7a7a7;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+body main#create-list {
+  height: calc(100vh-132px);
+  color: #fff;
+  margin-left: 60px;
+}
+
+body main#create-list form {
+  width: 300px;
+  position: relative;
+}
+
+body main#create-list form label {
+  margin-bottom: 16px;
+}
+
+body main#create-list form label h3 {
+  margin-bottom: 8px;
+}
+
+body main#create-list form label input {
+  width: 300px;
+  height: 30px;
+  padding-left: 4px;
+  font-size: 16px;
+  border: 1px solid #000;
+  margin-bottom: 16px;
+}
+
+body main#create-list form label input.file-input {
+  border: 0;
+}
+
+body main#create-list form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #000;
+  background: #a7a7a7;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  cursor: pointer;
+}
+
+body .player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  padding: 16px 15vw;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  background: #000;
+  border-top: 3px solid #fff;
+  color: #fff;
+}
+
+body .player .podcast-img {
+  width: 80px;
+  height: 90px;
+  background-image: url(https://cdn.dribbble.com/users/5829351/screenshots/13963621/i_will_do_professional_podcast_cover_art_design_2_4x.jpg);
+  background-size: cover;
+}
+
+body .player .detail p {
+  font-weight: 700;
+}
+
+body .player .detail span {
+  font-style: italic;
+  opacity: .7;
+}
+
+body .player .bar {
+  position: relative;
+}
+
+body .player .bar .line {
+  width: 400px;
+  height: 4px;
+  background: #fff;
+  position: relative;
+}
+
+body .player .bar .line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rebeccapurple;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+body .player .bar span {
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+body .player .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+body .player .buttons label {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rebeccapurple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

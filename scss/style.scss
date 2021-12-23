@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+}
+
+body {
+    background: rebeccapurple;
+
+    header {
+        color: #fff;
+        background: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 20px;
+        margin-bottom: 32px;
+    
+        .left {
+            a {
+                text-decoration: none;
+                color: #fff;
+    
+                span {
+                    display: inline-block;
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+            }
+        }
+    
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    
+            p {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+    
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #000;
+                    padding: 4px 12px;
+                    background: #a7a7a7;
+                    border-radius: 4px;
+                    font-size: 14px;
+    
+                    &:not(:last-child) {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    
+    main {
+        &#home {
+            margin: 32px 64px;
+            padding: 16px 20px;
+        
+            .component {
+                margin-bottom: 24px;
+        
+                h3 {
+                    font-size: 28px;
+                    margin-bottom: 16px;
+                    color: #fff;
+                }
+        
+                .podcasts {
+                    display: flex;
+        
+                    .podcast {
+                        border: 1px solid #ddd;
+                        padding: 4px;
+                        background: #fff;
+                        position: relative;
+        
+                        &:not(:last-child) {
+                            margin-right: 16px;
+                        }
+        
+                        .podcast-img {
+                            width: 160px;
+                            height: 180px;
+                            background-image: url(https://cdn.dribbble.com/users/5829351/screenshots/13963621/i_will_do_professional_podcast_cover_art_design_2_4x.jpg);
+                            background-size: cover;
+                            margin-bottom: 4px;
+                        }
+        
+                        span {
+                            font-style: italic;
+                            opacity: .7;
+                        }
+
+                        a.listening-link {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &#login,
+        &#register,
+        &#forgot-password {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            
+            .component {
+                width: 300px;
+                padding: 16px;
+                border: 1px solid #000;
+                background: #fff;
+                border-radius: 10px;
+                
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        padding: 8px;
+                        border: 1px solid #000;
+                        margin-bottom: 8px;
+                    }
+
+                    a.forgot-link {
+                        display: inline-block;
+                        font-size: 12px;
+                        margin-bottom: 12px;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .btn {
+                            width: 120px;
+                            height: 30px;
+                            margin: 0 16px;
+                            text-decoration: none;
+                            background: #a7a7a7;
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #000;
+                            font-size: 14px;
+                            border: 1px solid #000;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &#upload {
+            color: #fff;
+            margin: 32px;
+
+            .component {
+                margin-bottom: 24px;
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                }
+
+                form {
+                    width: 500px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            span {
+                                display: block;
+                                margin-bottom: 4px;
+                            }
+
+                            input {
+                                margin-bottom: 16px;
+                                border: 1px solid #000;
+                                padding: 4px 8px;
+                                width: 300px;
+                            }
+
+                            textarea {
+                                resize: none;
+                                border: 1px solid #000;
+                                padding: 4px 8px;
+                                width: 300px;
+                            }
+                        }
+                    }
+
+                    .right {
+                        button {
+                            padding: 8px 16px;
+                            font-size: 16px;
+                            font-weight: 700;
+                            background: #a7a7a7;
+                            border: 1px solid #000;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        &#profile {
+            margin: 32px 128px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .component {
+                display: flex;
+                justify-content: space-between;
+                color: #fff;
+                width: 100vw;
+
+                .profile {
+                    width: 300px;
+                    
+                    h3 {
+                        font-size: 28px;
+                        margin-bottom: 8px;
+                    }
+
+                    img.avatar {
+                        width: 300px;
+                        border: 1px solid #000;
+                        margin-bottom: 8px;
+                    }
+
+                    h4 {
+                        text-align: center;
+                        margin-bottom: 4px;
+                    }
+
+                    p.bio {
+                        text-align: center;
+                        font-size: 14px;
+                        margin: 8px;
+                    }
+
+                    a {
+                        text-align: center;
+                        font-size: 14px;
+                        display: block;
+                        text-decoration: none;
+                        color: #000;
+                        padding: 4px 12px;
+                        background: #a7a7a7;
+                        border-radius: 4px;
+                        border: 1px solid #000;
+                    }
+                }
+
+                .all-contents {
+                    h3 {
+                        font-size: 28px;
+                        margin-bottom: 8px;
+                    }
+
+                    .contents {
+                        display: flex;
+                        margin-bottom: 16px;
+            
+                        .content {
+                            border: 1px solid #ddd;
+                            padding: 4px;
+                            cursor: pointer;
+                            background: #fff;
+            
+                            &:not(:last-child) {
+                                margin-right: 16px;
+                            }
+            
+                            .content-img {
+                                width: 160px;
+                                height: 180px;
+                                background-image: url(https://cdn.dribbble.com/users/5829351/screenshots/13963621/i_will_do_professional_podcast_cover_art_design_2_4x.jpg);
+                                background-size: cover;
+                                margin-bottom: 4px;
+                            }
+
+                            h4 {
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    a {
+                        text-align: center;
+                        font-size: 14px;
+                        display: block;
+                        text-decoration: none;
+                        color: #000;
+                        padding: 4px 12px;
+                        background: #a7a7a7;
+                        border-radius: 4px;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+
+        &#edit-profile {
+            height: calc(100vh-132px);
+            display: flex;
+            align-items: center;
+            color: #fff;
+            margin-left: 60px;
+
+            .component {
+                h1 {
+                    margin-bottom: 16px;
+                }
+
+                .flex-box {
+                    width: 40vw;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .profile {
+                        width: 200px;
+
+                        img {
+                            width: 200px;
+                            margin-bottom: 8px;
+                        }
+
+                        h3 {
+                            text-align: center;
+                        }
+                    }
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            h5 {
+                                font-size: 20px;
+                                margin-bottom: 4px;
+                            }
+
+                            input,
+                            textarea {
+                                border: 1px solid #000;
+                                width: 200px;
+                                height: 32px;
+                                padding-left: 4px;
+                                font-size: 16px;
+                                margin-bottom: 8px;
+                            }
+
+                            textarea {
+                                resize: none;
+                                height: 100px;
+                            }
+                        }
+
+                        button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 32px;
+                            font-size: 16px;
+                            font-weight: 700;
+                            background: #a7a7a7;
+                            border-radius: 4px;
+                            border: 1px solid #000;
+                        }
+                    }
+                }
+            }
+     
+        }
+
+        &#create-list {
+            height: calc(100vh-132px);
+            color: #fff;
+            margin-left: 60px;
+
+            form {
+                width: 300px;
+                position: relative;
+
+                label {
+                    margin-bottom: 16px;
+                    
+                    h3 {
+                        margin-bottom: 8px;
+                    }
+
+                    input {
+                        width: 300px;
+                        height: 30px;
+                        padding-left: 4px;
+                        font-size: 16px;
+                        border: 1px solid #000;
+                        margin-bottom: 16px;
+
+                        &.file-input {
+                            border: 0;
+                        }
+                    }
+                }
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 150px;
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    border: 1px solid #000;
+                    background: #a7a7a7;
+                    position: absolute;
+                    bottom: -30px;
+                    right: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .player {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 16px 15vw;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background: #000;
+        border-top: 3px solid #fff;
+        color: #fff;
+
+        .podcast-img {
+            width: 80px;
+            height: 90px;
+            background-image: url(https://cdn.dribbble.com/users/5829351/screenshots/13963621/i_will_do_professional_podcast_cover_art_design_2_4x.jpg);
+            background-size: cover;
+        }
+
+        .detail {
+            p {
+                font-weight: 700;
+            }
+
+            span {
+                font-style: italic;
+                opacity: .7;
+            }
+        }
+
+        .bar {
+            position: relative;
+
+            .line {
+                width: 400px;
+                height: 4px;
+                background: #fff;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 30px;
+                    transform: translateY(-50%);
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: rebeccapurple;
+                    border: 2px solid #fff;
+                    cursor: pointer;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+
+            label {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rebeccapurple;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
